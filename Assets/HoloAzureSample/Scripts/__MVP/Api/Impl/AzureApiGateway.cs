@@ -55,7 +55,6 @@ namespace HoloAzureSample.SpeechToText.MVP
             var headers = new Dictionary<string, string>
             {
                 {"Ocp-Apim-Subscription-Key", _subscriptionKey},
-                {"Transfer-Encoding", "chunked"}
             };
 
             try

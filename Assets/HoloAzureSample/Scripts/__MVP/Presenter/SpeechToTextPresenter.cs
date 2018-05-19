@@ -9,7 +9,7 @@ namespace HoloAzureSample.SpeechToText.MVP
     /// ViewとUsecaseを監視し、モデルを取得したり、それをビューに反映させたりする
     /// Viewロジック自体は持たせない
     /// </summary>
-    public class SpeechToTextPresenter
+    public class SpeechToTextPresenter : IInitializable
     {
         // 依存関係はZenJectのフィールドインジェクションで依存性を解決している
 
@@ -22,12 +22,7 @@ namespace HoloAzureSample.SpeechToText.MVP
         [Inject]
         private SpeechToTextViewEx _view;
 
-        public SpeechToTextPresenter()
-        {
-            Debug.Log("Construct");
-        }
-
-        private void Initialize()
+        public void Initialize()
         {
             _voiceInputProvider.RecordingEventStream
                 .Subscribe(eventType =>

@@ -14,7 +14,9 @@ namespace HoloAzureSample.SpeechToText.MVP
         public override void InstallBindings()
         {
             // Presenter
-            Container.Bind<SpeechToTextPresenter>()
+            Container
+                .Bind<IInitializable>()
+                .To<SpeechToTextPresenter>()
                 .AsSingle()
                 .NonLazy();
 
