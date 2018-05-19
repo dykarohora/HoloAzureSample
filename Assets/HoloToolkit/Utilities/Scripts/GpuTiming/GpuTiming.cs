@@ -79,7 +79,7 @@ namespace HoloToolkit.Unity
 		{
 			if (currentEventId.Count > 0)
 			{
-				// End measuring GPU frame time
+				// Complete measuring GPU frame time
 				int eventId = currentEventId.Pop() + BaseEndEventId;
 				GL.IssuePluginEvent(GetRenderEventFunc(), eventId);
 			}

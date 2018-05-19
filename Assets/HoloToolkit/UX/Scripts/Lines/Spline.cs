@@ -394,7 +394,7 @@ namespace HoloToolkit.Unity.UX
                     UnityEditor.EditorGUILayout.EndVertical();
 
                     GUI.color = defaultColor;
-                    if (GUILayout.Button(" + Add Points To End"))
+                    if (GUILayout.Button(" + Add Points To Complete"))
                     {
                         // Using lists for maximum clarity
                         pointsList.Clear();
@@ -410,7 +410,7 @@ namespace HoloToolkit.Unity.UX
                     }
                     if (line.NumPoints > 4)
                     {
-                        if (GUILayout.Button(" - Remove Points From End"))
+                        if (GUILayout.Button(" - Remove Points From Complete"))
                         {
                             // Using lists for maximum clarity
                             pointsList.Clear();

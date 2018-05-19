@@ -137,7 +137,7 @@ namespace HoloToolkit.Unity
                 SettingToggle(keys[iKey]);
             }
 
-            // End Settings Section
+            // Complete Settings Section
             GUILayout.EndVertical();
 
             // Status box area
